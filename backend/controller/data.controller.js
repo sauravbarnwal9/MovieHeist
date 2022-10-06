@@ -8,6 +8,8 @@ res.send({"msg":"successfully added"})
 
 }
 exports.getData=async(req,res)=>{
-    const data=await DataModel.find()
+    const query=req.query || null
+ 
+    let data=await DataModel.find(query)
     res.send({"movies":data})
 }

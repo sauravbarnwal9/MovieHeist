@@ -1,0 +1,50 @@
+.section{
+    display: flex;
+    border: 3px solid red;
+
+}
+.movie{
+  width: 70%;
+ 
+
+}
+.sidebar{
+    width:30%;
+    
+
+}
+#heading{
+    font-size:70px
+}
+/* Laptop View */
+/* @media screen and (max-width: 992px) {
+
+} */
+
+
+/* Mobile view */
+
+@media screen and (max-width: 600px) {
+
+.section{
+    display: block;
+    
+}
+.movie{
+    width: 100%;
+ 
+}
+.sidebar{
+   
+    width:100%;
+    height: 50%;
+    padding:2rem;
+}
+#heading{
+    font-size: large;
+}
+.description{
+    font-size: medium;
+}
+
+}

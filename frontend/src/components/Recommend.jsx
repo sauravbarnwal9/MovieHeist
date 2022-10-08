@@ -14,14 +14,17 @@ import "swiper/css/navigation";
 import { Pagination ,Navigation} from "swiper";
 
 function Recommend() {
+       <style>
+
+       </style>
   return (
-    <Box w={'100%'} h='100%'  mb='5rem' p="3rem" pt="0rem">
+    <Box w={'100%'} h='100%'  mb='5rem' p="0rem" pt="0rem">
         <Box fontSize={'2xl'} fontWeight='semibold' fontFamily={'cursive'} padding='0.5rem' >More Like This</Box>
         <Box padding={'1rem'} paddingTop={"0rem"} h='100%' >
         <Swiper
-        slidesPerView={5}
+        slidesPerView={[3,2,5]}
         spaceBetween={30}
-        slidesPerGroup={5}
+        slidesPerGroup={[3,2,5]}
         loop={true}
         loopFillGroupWithBlank={true}
         pagination={{

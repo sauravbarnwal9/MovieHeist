@@ -1,6 +1,0 @@
-{
-  "dependencies": {
-    "redux-thunk": "^2.4.1",
-    "swiper": "^8.4.3"
-  }
-}

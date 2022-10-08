@@ -19,7 +19,7 @@ function Recommend() {
         <Box fontSize={'2xl'} fontWeight='semibold' fontFamily={'cursive'} padding='0.5rem' >More Like This</Box>
         <Box padding={'1rem'} paddingTop={"0rem"} h='100%' >
         <Swiper
-        slidesPerView={5}
+        slidesPerView={[1,3,5]}
         spaceBetween={30}
         slidesPerGroup={5}
         loop={true}

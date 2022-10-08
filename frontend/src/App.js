@@ -7,9 +7,9 @@ import Navbar from './Components/Navbar';
 function App() {
   return (
     <>
-    <Box marginBottom={"100px"} height="120px"><Navbar/></Box>
+    <Box marginBottom={"20px"} height="120px"><Navbar/></Box>
       {/* <Card/> */}
-      {/* <Recommend/> */}
+      {/* <Recommend/> */}  
       <MainRoutes /> 
     </>
   );

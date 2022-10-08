@@ -15,7 +15,7 @@ import { Pagination ,Navigation} from "swiper";
 
 function Recommend() {
   return (
-    <Box w={'100%'}h="200px"  mb='5rem'>
+    <Box w={'100%'}  mb='5rem' p="3rem" pt="0rem">
         <Box fontSize={'2xl'} fontWeight='semibold' fontFamily={'cursive'} padding='0.5rem' >More Like This</Box>
         <Box padding={'1rem'} paddingTop={"0rem"} h='100%' >
         <Swiper

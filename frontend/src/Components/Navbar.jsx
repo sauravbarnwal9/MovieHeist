@@ -16,7 +16,7 @@ const Navbar = () => {
             <NavLink to="/home/movies">More</NavLink>
           </Box>
           <Box w="100%" display="flex" justifyContent={"flex-end"}>
-            <NavLink><Button border="1px solid gray">Login</Button></NavLink>
+            <NavLink to="/login"><Button border="1px solid gray">Login</Button></NavLink>
           </Box>
       </Flex>
     </Box>

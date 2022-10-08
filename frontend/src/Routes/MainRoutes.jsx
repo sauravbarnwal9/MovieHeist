@@ -1,5 +1,6 @@
 import React from 'react'
 import {Routes, Route} from 'react-router-dom'
+import Card from '../components/Card'
 import Homepage from '../Pages/Homepage'
 import HotStar from '../Pages/HotStar'
 import Login from '../Pages/Login'
@@ -11,6 +12,7 @@ const MainRoutes = () => {
          <Route path="/signup" element={<Signup />} />
          <Route path="/home" element={<Homepage/>}/>
          <Route path="/home/movies" element={<HotStar/>}/>
+         <Route path="/home/movies/:id" element={<Card/>}/>
     </Routes>
   )
 }

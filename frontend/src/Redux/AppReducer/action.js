@@ -23,6 +23,7 @@ export const Get_Data = (query) => (dispatch) => {
     dispatch({ type: ADD_DATA_LOADING });
   
     return axios
+    
       .post(`http://localhost:3000/data/add`, payload)
       .then((r) => {
         dispatch({ type:ADD_DATA_SUCCESS, payload: r });

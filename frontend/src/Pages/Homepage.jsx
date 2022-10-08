@@ -7,6 +7,7 @@ import {Autoplay} from 'swiper'
 import { useState } from 'react';
 import axios from 'axios'
 import Navbar from '../Components/Navbar';
+import { NavLink } from 'react-router-dom';
 const Homepage = () => {
   const [carousel,setCarousel] = useState([])
   const getImage = () =>{
@@ -17,6 +18,13 @@ const Homepage = () => {
     })
     .catch((err)=>console.log(err))
   }
+// Handle Click
+  function handleClick(id){
+      console.log(id)
+}
+
+
+
   useEffect(() => {
     getImage()
   }, [])
@@ -51,10 +59,10 @@ const Homepage = () => {
        </Box>
        <Box className={style.cards}>
         <SimpleGrid columns={[1,1,2,4]} spacing={10}>
-          <Box className={style.category}><Text>HotStar</Text></Box>
-          <Box className={style.category}><Text>Netflix</Text></Box>
-          <Box className={style.category}><Text>Amazon Prime</Text></Box>
-          <Box className={style.category}><Text>More</Text></Box>
+          <NavLink to="/home/"><Box className={style.category} id="HOTSTAR"><Text>HotStar</Text></Box></NavLink>
+          <NavLink to=""><Box className={style.category} id="NETFLIX"><Text>Netflix</Text></Box></NavLink>
+          <NavLink to=""><Box className={style.category} id="AMZN"><Text>Amazon Prime</Text></Box></NavLink>
+          <NavLink to=""><Box className={style.category}><Text>More</Text></Box></NavLink>
         </SimpleGrid>
        </Box>
     </Box>

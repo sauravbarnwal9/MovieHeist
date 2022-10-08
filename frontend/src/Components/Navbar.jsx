@@ -10,10 +10,10 @@ const Navbar = () => {
           <NavLink><Box fontSize={"40px"}>LOGO</Box></NavLink>
           </Box>
           <Box w="100%" display={"flex"} gap="50px" fontSize={"20px"} >
-            <NavLink>HotStar</NavLink>
-            <NavLink>NetFlix</NavLink>
-            <NavLink>Amazon Prime</NavLink>
-            <NavLink>More</NavLink>
+            <NavLink to="/home/movies">HotStar</NavLink>
+            <NavLink to="/home/movies">NetFlix</NavLink>
+            <NavLink to="/home/movies">Amazon Prime</NavLink>
+            <NavLink to="/home/movies">More</NavLink>
           </Box>
           <Box w="100%" display="flex" justifyContent={"flex-end"}>
             <NavLink><Button border="1px solid gray">Login</Button></NavLink>

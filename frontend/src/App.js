@@ -8,8 +8,8 @@ function App() {
   return (
     <>
     <Box marginBottom={"100px"} height="120px"><Navbar/></Box>
-      <Card/>
-      <Recommend/>
+      {/* <Card/> */}
+      {/* <Recommend/> */}
       <MainRoutes /> 
     </>
   );

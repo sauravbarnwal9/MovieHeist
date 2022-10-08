@@ -22,9 +22,9 @@ function Card() {
 
 <Box mt='2rem'>
 <Box fontStyle={'revert-layer'} fontWeight="bold" fontSize={'4xl'}>Cuttputlli - Trailer</Box>
-<Box fontStyle={'oblique'} fontWeight="hairline" fontSize={'2xl'}>Genre:Mystery</Box>
-<Box fontStyle={'oblique'} fontWeight="hairline" fontSize={'2xl'}>Language:Hindi</Box>
-<Box fontStyle={'oblique'} fontWeight="hairline" fontSize={'2xl'}>Rating: 4.5☆</Box>
+<Box fontStyle={'oblique'} fontWeight="bold" fontSize={'xl'}>Genre:Mystery</Box>
+<Box fontStyle={'oblique'} fontWeight="bold" fontSize={'xl'}>Language:Hindi</Box>
+<Box fontStyle={'oblique'} fontWeight="bold" fontSize={'xl'}>Rating: 4.5☆</Box>
 <Box fontStyle={'italic'}fontWeight='semibold' color={'gray.400'} mt='0.5rem' fontSize={"md"}>When a small town gets plunged into the nightmare of serial killings, rookie cop Arjan embarks on a chase for the truth and unravels a gruesome conspiracy.</Box>
 </Box>
 <Flex w='100%' mt='4rem'  justifyContent='space-between'>

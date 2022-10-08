@@ -3,11 +3,24 @@ const validator=require("validator")
 
 
 const  loginValidator=(req,res,next)=>{
-    const data=req.body
-    let password=data.password
-    let email=data.email
-
-return (password&&validator.isEmail(email))?next():res.send({"msg":"please write in correct format"})
+    try {
+        let data=req.body
+        
+        let email=data.email
+        let password=data.password 
+     if(validator.isEmail(email)&&password){
+        next()
+    
+     }
+     else{
+        
+        res.status(404).send({"msg":"please write correct email and password"})
+     }
+    } catch (error) {
+        console.log(error)
+        res.status(404).send({"msg":"please write correct email and  password"})
+        
+    }
 
 }
 module.exports={

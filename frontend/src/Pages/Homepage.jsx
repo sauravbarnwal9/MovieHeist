@@ -6,7 +6,7 @@ import 'swiper/css';
 import {Autoplay} from 'swiper'
 import { useState } from 'react';
 import axios from 'axios'
-import Navbar from '../Components/Navbar';
+import Navbar from '../components/Navbar';
 import { NavLink } from 'react-router-dom';
 const Homepage = () => {
   const [carousel,setCarousel] = useState([])

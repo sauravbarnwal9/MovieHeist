@@ -1,3 +1,8 @@
+const bcrypt =require('bcrypt')
+const jwt=require('jsonwebtoken');
+const { UserModel } = require('../model/user.model');
+const SECRET_CODE="secret"
+
 exports.signup=(req,res)=>{
     const data = req.body;
     //  console.log(data)
@@ -15,6 +20,7 @@ exports.signup=(req,res)=>{
             res.status(200).send({ "signup": "successfully", "token": token });
           })
         } catch (error) {
+          console.log(error)
           res
           .status(404)
           .json({
@@ -34,7 +40,7 @@ exports.login = async (req, res) => {
   
       try {
       const { email, password } = data;
-      let user = await User.findOne({email: email });
+      let user = await UserModel.findOne({email: email });
       let hash = user.password;
   
       bcrypt.compare(password, hash, function (err, result) {
@@ -44,11 +50,12 @@ exports.login = async (req, res) => {
           res.status(200).send({ "sign in": "successfully", "token": token });
         } 
         else{
-          res.status(304).send("Password is Invalid")
+          res.status(404).send({"msg":"password is invalid"})
         }
        
         });
       } catch (error) {
+        console.log(error)
         res
         .status(404)
         .json({

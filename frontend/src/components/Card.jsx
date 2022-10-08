@@ -58,6 +58,7 @@ function Card() {
    
   </Box>
    {/* Slider */}
+   <Recommend />
   </>
   )
 }

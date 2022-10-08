@@ -3,7 +3,7 @@ import {Box} from '@chakra-ui/react'
 import MainRoutes from './Routes/MainRoutes';
 import Card from './components/Card';
 import Recommend from './components/Recommend';
-import Navbar from './components/Navbar';
+import Navbar from './Components/Navbar';
 function App() {
   return (
     <>

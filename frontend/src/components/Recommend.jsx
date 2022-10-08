@@ -22,7 +22,12 @@ function Recommend() {
         <Box fontSize={'2xl'} fontWeight='semibold' fontFamily={'cursive'} padding='0.5rem' >More Like This</Box>
         <Box padding={'1rem'} paddingTop={"0rem"} h='100%' >
         <Swiper
-        slidesPerView={[3,2,5]}
+       // slidesPerView={5}
+       breakpoints={{
+            640: { slidesPerView: 5},
+            450: {slidesPerView : 3},
+            235: {slidesPerView: 2}
+       }}
         spaceBetween={30}
         slidesPerGroup={[3,2,5]}
         loop={true}

@@ -56,7 +56,9 @@ function Card() {
    
   </Box>
    {/* Slider */}
-  {/* <Recommend/> */}
+  <Box h="300px">
+  <Recommend/>
+  </Box>
   </>
   )
 }

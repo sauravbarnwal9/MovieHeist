@@ -30,7 +30,7 @@ const Homepage = () => {
   }, [])
   
   return (
-    <Box className={style.home_main}>
+    <Box className={style.home_main} id='background'>
       {/* Slider */}
        <Box className={style.home_slider}>
        <Swiper

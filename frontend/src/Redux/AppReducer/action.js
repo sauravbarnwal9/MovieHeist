@@ -6,10 +6,13 @@ import axios from 'axios'
 
 export const Get_Data = (query) => (dispatch) => {
     dispatch({ type:GET_DATA_LOADING});
-  query=query?query:""
+
+    query=query?query:""
+    let q=`?$source=${query}`
     return axios
 
-      .get(`http://localhost:3000/data/get?source=${query}`)
+
+      .get(`http://localhost:8000/data/get${query&&q}`)
       .then((r) => {
         dispatch({ type:GET_DATA_SUCCESS, payload: r.data });
       })
@@ -24,7 +27,7 @@ export const Get_Data = (query) => (dispatch) => {
   
     return axios
     
-      .post(`http://localhost:3000/data/add`, payload)
+      .post(`http://localhost:8000/data/add`, payload)
       .then((r) => {
         dispatch({ type:ADD_DATA_SUCCESS, payload: r });
       })

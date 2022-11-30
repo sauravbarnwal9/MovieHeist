@@ -10,7 +10,7 @@
     height: 100%;
     background-size: 100% 600px;
     background-repeat: no-repeat;
-    color:white ;
+    /* color:white ; */
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     border-radius: 20px;
 }
